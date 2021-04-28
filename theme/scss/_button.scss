@@ -1,5 +1,6 @@
 .btn-round-line,
-.btn-light-blue {
+.btn-light-blue,
+.btn-red {
 	transition: all 0.3s ease-in;
 	padding: 1em;
 	font-weight: bold;
@@ -37,10 +38,32 @@
 
 .btn-light-blue {
 	background-color: $lightBlue;
-	border-radius: 50px;
+	border-radius: 5px;
 	color: #fff;
 	&:hover {
 		background-color: #4d98e3;
 		color: #fff;
 	}
+}
+
+.btn-red {
+	background-color: #7c1813;
+	color: #fff;
+	border-radius: 5px;
+	&:hover {
+		background-color: transparent;
+		border: solid 2px #7c1813;
+		color: #7c1813;
+	}
+}
+
+.btn-round {
+	border-radius: 50px !important;
+}
+
+button,
+button:focus {
+	border: none;
+	outline: none;
+	cursor: pointer;
 }

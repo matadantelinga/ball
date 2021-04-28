@@ -452,26 +452,6 @@ section.test-section {
   float: left;
 }
 
-.social-links a {
-  height: 36px;
-  width: 36px;
-  background: #2b333b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 40px;
-  margin-right: 15px;
-}
-
-.social-links {
-  display: flex;
-  margin-top: 20px;
-}
-
-.social-links a:hover {
-  background: #dd9c29;
-}
-
 .home-map-wrpper iframe {
   width: 100%;
   height: 500px;
@@ -556,7 +536,7 @@ h4.footer-navigation-heading {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 a.footer-nav-link {
@@ -566,7 +546,7 @@ a.footer-nav-link {
 }
 
 li.li-margin {
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .greif-wrapper img {
@@ -1347,11 +1327,6 @@ section.send-flower {
   color: #092d4b;
 }
 
-ul.footer-lsit {
-  padding: 0;
-  list-style: none;
-}
-
 .web-box h2 a {
   color: #dd9c29;
 }
@@ -1377,27 +1352,8 @@ ul.footer-lsit {
 }
 
 @media (max-width: 767px) {
-  button.navbar-toggle {
-    display: inline-block;
-    background: transparent;
-    border: none;
-    font-size: 30px;
-    color: #092d4b;
-    cursor: pointer;
-  }
-
   button.navbar-toggle.active {
     color: #dd9c29;
-  }
-
-  .logo-wrapper {
-    display: flex;
-    padding: 30px 15px;
-    justify-content: space-between;
-  }
-
-  .logo-wrapper a img {
-    width: 300px;
   }
 
   .menu-header {
@@ -1704,10 +1660,6 @@ ul.footer-lsit {
     flex-direction: column;
   }
 
-  ul.footer-lsit {
-    display: none;
-  }
-
   .footer-logo {
     text-align: center;
     margin-bottom: 20px;
@@ -1822,10 +1774,34 @@ ul.footer-lsit {
 .logo-wrapper img {
   max-width: 290px;
 }
+@media (max-width: 767px) {
+  .logo-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px 15px;
+  }
+  .logo-wrapper img {
+    max-width: 240px;
+  }
+  .logo-wrapper .navbar-toggle {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: #092d4b;
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
 
 nav.navbar.custom-nav {
   background: #fff;
   padding: 0.5rem 1rem;
+}
+@media (max-width: 767px) {
+  nav.navbar.custom-nav {
+    padding: 0;
+  }
 }
 nav .menu-header {
   display: none;
@@ -1965,6 +1941,41 @@ nav .navbar-list li .logo-wrapper img {
   nav .menu-header .navbar-hide:focus {
     box-shadow: none;
     outline: none;
+  }
+}
+
+ul.footer-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  ul.footer-list {
+    display: none;
+  }
+}
+
+.social-links {
+  display: flex;
+  margin-top: 20px;
+}
+.social-links a {
+  height: 36px;
+  width: 36px;
+  background: #2b333b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+.social-links a:hover {
+  background: #dd9c29;
+}
+@media (max-width: 767px) {
+  .social-links {
+    margin-bottom: 20px;
+    justify-content: center;
   }
 }
 
@@ -2258,7 +2269,8 @@ section.home-banner.testimonials {
 }
 
 .btn-round-line,
-.btn-light-blue {
+.btn-light-blue,
+.btn-red {
   transition: all 0.3s ease-in;
   padding: 1em;
   font-weight: bold;
@@ -2271,7 +2283,8 @@ section.home-banner.testimonials {
   color: #505050;
 }
 .btn-round-line:hover,
-.btn-light-blue:hover {
+.btn-light-blue:hover,
+.btn-red:hover {
   transition: all 0.3s ease-out;
   transform: translateX(0px) translateY(-5px);
   transform-style: preserve-3d;
@@ -2281,7 +2294,8 @@ section.home-banner.testimonials {
 }
 @media (max-width: 767px) {
   .btn-round-line,
-  .btn-light-blue {
+  .btn-light-blue,
+  .btn-red {
     width: 100%;
     display: block;
     max-width: 100%;
@@ -2300,12 +2314,34 @@ section.home-banner.testimonials {
 
 .btn-light-blue {
   background-color: #3281d1;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #fff;
 }
 .btn-light-blue:hover {
   background-color: #4d98e3;
   color: #fff;
+}
+
+.btn-red {
+  background-color: #7c1813;
+  color: #fff;
+  border-radius: 5px;
+}
+.btn-red:hover {
+  background-color: transparent;
+  border: solid 2px #7c1813;
+  color: #7c1813;
+}
+
+.btn-round {
+  border-radius: 50px !important;
+}
+
+button,
+button:focus {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 #faq-accordion.faq-option1 .faq-card {
