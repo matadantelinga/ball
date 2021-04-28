@@ -1,0 +1,24 @@
+.forms-list {
+	padding: 20px 0;
+	&.form-option2 {
+		.form-item {
+			border-bottom: solid 1px #d5d5d5;
+			padding-bottom: 17px;
+			.filename {
+				font-weight: bold;
+			}
+		}
+	}
+	&.form-borderColor1 {
+		.form-item {
+			border-bottom: solid 1px #7c1813;
+		}
+	}
+	.form-item {
+		margin-bottom: 17px;
+		.filename {
+			color: $themeBlack;
+			margin-left: 5px;
+		}
+	}
+}
