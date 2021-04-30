@@ -868,6 +868,7 @@ h5.heading-help {
 
 .address-wrapper .map-wrapper {
   margin-bottom: 30px;
+  padding: 5px;
 }
 
 h2.content-sub-title {
@@ -890,9 +891,11 @@ h2.content-sub-title {
   width: 33.33%;
 }
 
+.loc-img-list {
+  padding: 5px;
+}
 .loc-img-list img {
   width: 100%;
-  padding: 10px;
   height: 220px;
   object-fit: cover;
 }
@@ -977,6 +980,9 @@ section.services-container {
   font-weight: 900;
 }
 
+.full-img {
+  padding: 5px;
+}
 .full-img img {
   width: 100%;
   margin-bottom: 25px;
@@ -1979,6 +1985,17 @@ ul.footer-list {
   }
 }
 
+.secondary-title {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Montserrat", serif;
+}
+@media (max-width: 767px) {
+  .secondary-title {
+    font-size: 30px;
+  }
+}
+
 .obuturies-wrapper {
   /* Enable when obit option 3 is choosen */
 }
@@ -2099,6 +2116,174 @@ ul.footer-list {
     padding: 1.5em 15px 2em;
   }
 }
+#obituaries-page {
+  background: #e9edf1;
+  overflow: hidden;
+}
+#obituaries-page .search-form-wrapper {
+  background: #fff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  border-radius: 5px;
+  margin-bottom: 3em;
+}
+@media (max-width: 767px) {
+  #obituaries-page .search-form-wrapper {
+    padding: 40px 15px;
+    margin: -60px -15px 2em;
+    border-radius: 0;
+  }
+}
+#obituaries-page .search-form-wrapper form .input-group {
+  border: solid 1px #d6d6d6;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#obituaries-page .search-form-wrapper form .input-group .form-control {
+  border: none;
+  border-radius: 0;
+  flex: 0 0 95%;
+  max-width: 95%;
+}
+#obituaries-page .search-form-wrapper form .input-group button {
+  max-width: 5%;
+  flex: 0 0 5%;
+  background: none;
+}
+#obituaries-page .search-form-wrapper form .input-group .form-control,
+#obituaries-page .search-form-wrapper form .input-group button {
+  height: 50px;
+}
+#obituaries-page .search-form-wrapper form .input-group .form-control {
+  transition: all 0.3s ease;
+}
+#obituaries-page .search-form-wrapper form .input-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  #obituaries-page .search-form-wrapper form {
+    margin-top: 15px;
+  }
+  #obituaries-page .search-form-wrapper form .input-group .form-control {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  #obituaries-page .search-form-wrapper form .input-group button {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+#obituaries-page .subscribes-form {
+  padding: 60px 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  background-image: url(../assets/newsletter-bg.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: none;
+}
+#obituaries-page .subscribes-form .form-content {
+  margin: 0 10px;
+  text-align: center;
+}
+#obituaries-page .subscribes-form .form-content .form-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+#obituaries-page .subscribes-form .form-content p {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: normal;
+}
+#obituaries-page .subscribes-form .form-content form .input-group {
+  margin-bottom: 10px;
+}
+#obituaries-page .subscribes-form .form-content form .form-control {
+  width: 100%;
+}
+#obituaries-page .subscribes-form .form-content form .form-control {
+  height: 40px;
+}
+#obituaries-page .subscribes-form .form-content form .btn-gold {
+  width: 100%;
+  display: block;
+}
+#obituaries-page .obituaries-item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+#obituaries-page .obituaries-item .obituaries-image {
+  flex: 0 0 30%;
+  max-width: 30%;
+  background: #fff;
+  padding: 7px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 311px;
+}
+#obituaries-page .obituaries-item .obituaries-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#obituaries-page .obituaries-item .obituaries-properties {
+  flex: 0 0 70%;
+  max-width: 70%;
+  padding: 10px 10px 10px 25px;
+}
+#obituaries-page .obituaries-item .obituaries-properties .obit-name {
+  font-weight: bold;
+  font-size: 24px;
+}
+#obituaries-page .obituaries-item .obituaries-properties span {
+  display: block;
+  margin: 12px 0 7px;
+}
+#obituaries-page .obituaries-item .obituaries-properties p {
+  margin-bottom: 0;
+}
+#obituaries-page .obituaries-item .obituaries-properties .btn-wrapper {
+  margin: 30px 0 0;
+}
+@media (max-width: 767px) {
+  #obituaries-page .obituaries-item .obituaries-properties .btn-wrapper a {
+    display: block;
+  }
+  #obituaries-page .obituaries-item .obituaries-properties .btn-wrapper a:first-child {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #obituaries-page .obituaries-item .obituaries-image {
+    max-width: 70%;
+    flex: 0 0 70%;
+    margin: 0 auto 15px;
+  }
+  #obituaries-page .obituaries-item .obituaries-properties {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #obituaries-page .obituaries-item .obituaries-properties .obit-name,
+  #obituaries-page .obituaries-item .obituaries-properties span {
+    text-align: center;
+  }
+  #obituaries-page .obituaries-item .obituaries-properties {
+    padding: 10px 0;
+  }
+}
+#obituaries-page.obituaries-option3 .search-form-wrapper form, #obituaries-page.obituaries-option4 .search-form-wrapper form {
+  margin-top: 10px;
+}
+#obituaries-page.obituaries-option4 .obituaries-item {
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
 .staff-widget-wrapper {
   padding: 20px 0 0;
 }
@@ -2111,6 +2296,7 @@ ul.footer-list {
 .staff-widget-wrapper .staff-item .staff-image img {
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 .staff-widget-wrapper .staff-item .staff-properties .name,
 .staff-widget-wrapper .staff-item .staff-properties .position {
@@ -2184,8 +2370,184 @@ ul.footer-list {
   }
 }
 
+.staff-modal .modal-content {
+  color: #000;
+}
+.staff-modal .modal-content .close-btn {
+  text-align: right;
+  padding: 1em;
+  font-size: 24px;
+  color: #d5d5d5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+.staff-modal .modal-content .modal-body {
+  padding: 2.25rem 2rem 2rem;
+}
+.staff-modal .modal-content .modal-body .staff-title {
+  font-weight: bold;
+  font-size: 28px;
+}
+.staff-modal .modal-content .modal-body .staff-position {
+  font-size: 16px;
+  font-style: italic;
+  text-transform: inherit;
+}
+.staff-modal .modal-content .modal-body p {
+  margin: 1.25rem 0;
+}
+.staff-modal .modal-content .modal-body .contact {
+  display: flex;
+  align-items: center;
+}
+.staff-modal .modal-content .modal-body .contact i {
+  margin-right: 5px;
+  font-size: 24px;
+  color: #e79b25;
+}
+.staff-modal .modal-content .modal-body .contact a {
+  color: #e79b25;
+}
+
 section.home-banner.testimonials {
   background-image: linear-gradient(180deg, rgba(65, 0, 0, 0.2), rgba(65, 0, 0, 0.2)), url("../assets/obit-bg.jpg");
+}
+
+.homepage-testimonials {
+  padding: 100px 0;
+  float: left;
+  width: 100%;
+}
+.homepage-testimonials .test-heading {
+  width: 100%;
+}
+.homepage-testimonials .test-heading h2 {
+  font-family: "Playfair Display", sans-serif;
+  color: #09233f;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+.homepage-testimonials .test-item {
+  width: 100%;
+  padding: 20px;
+}
+.homepage-testimonials .test-item .test-item-inner {
+  padding: 40px 30px;
+  border-style: none;
+  border-width: 1px;
+  border-color: #93791d;
+  border-radius: 5px;
+  background-color: #edf0f3;
+  color: #09233f;
+}
+.homepage-testimonials .test-item .test-item-inner p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+.homepage-testimonials .test-item .test-item-inner h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+}
+.homepage-testimonials .test-item .test-item-inner .name {
+  color: #09233f;
+  font-size: 16px;
+  font-weight: 700;
+}
+.homepage-testimonials .test-item .test-item-inner .properties {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.homepage-testimonials .test-item .test-item-inner .properties .user-detail .position {
+  font-size: 13px;
+  color: #d5d5d5;
+}
+.homepage-testimonials .test-item .test-item-inner .test-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homepage-testimonials .test-item .test-item-inner .test-item-footer .rate-box img {
+  width: 100%;
+  max-width: 120px;
+}
+.homepage-testimonials .test-item .test-item-inner .test-item-footer .google-icon {
+  margin-right: 10px;
+}
+.homepage-testimonials .test-item .test-item-inner .test-item-footer .google-icon img {
+  width: 30px;
+  height: 30px;
+}
+.homepage-testimonials.testimonials-option1 .test-item .test-item-inner, .homepage-testimonials.testimonials-option3 .test-item .test-item-inner {
+  background-color: transparent;
+}
+.homepage-testimonials.testimonials-option1 .test-item .test-item-inner p, .homepage-testimonials.testimonials-option3 .test-item .test-item-inner p {
+  text-align: left;
+  font-style: italic;
+}
+.homepage-testimonials.testimonials-option1 .test-item .test-item-inner h4.name, .homepage-testimonials.testimonials-option3 .test-item .test-item-inner h4.name {
+  display: none;
+}
+.homepage-testimonials.testimonials-option1 .test-item .test-item-inner .test-item-footer, .homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer {
+  display: block;
+}
+.homepage-testimonials.testimonials-option1 .test-item .test-item-inner .test-item-footer .rate-box, .homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .rate-box {
+  margin-bottom: 10px;
+}
+.homepage-testimonials.testimonials-option1 .slick-arrow img, .homepage-testimonials.testimonials-option3 .slick-arrow img {
+  max-height: 20px;
+}
+.homepage-testimonials.testimonials-option1 .slick-arrow:before, .homepage-testimonials.testimonials-option3 .slick-arrow:before {
+  display: none;
+}
+.homepage-testimonials.testimonials-option1 .slick-arrow {
+  background-color: #fff;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  box-shadow: 1px 1px 10px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 10px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 10px -4px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+.homepage-testimonials.testimonials-option3 {
+  background: url(../assets/testi-bg.png) center center no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+.homepage-testimonials.testimonials-option3 .test-heading h2 {
+  color: #fff;
+}
+.homepage-testimonials.testimonials-option3 .test-item .test-item-inner {
+  color: #fff;
+  text-align: center;
+}
+.homepage-testimonials.testimonials-option3 .test-item .test-item-inner p {
+  text-align: center;
+}
+.homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .rate-box img {
+  margin: 0 auto 1rem;
+}
+.homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties {
+  justify-content: center;
+}
+.homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties .user-detail .name, .homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties .user-detail .position {
+  color: #fff;
 }
 
 .testimonials-container {
@@ -2268,11 +2630,56 @@ section.home-banner.testimonials {
   color: #3281d1;
 }
 
+@media (min-width: 992px) {
+  .testimonial-modal .modal-lg {
+    max-width: 65%;
+  }
+}
+.testimonial-modal .modal-content {
+  color: #000;
+  background-color: #fff;
+}
+.testimonial-modal .modal-content .close-btn {
+  text-align: right;
+  padding: 1em;
+  font-size: 24px;
+  color: #d5d5d5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+.testimonial-modal .modal-content .modal-body {
+  padding: 2.25rem 2rem 2rem;
+}
+.testimonial-modal .modal-content .modal-body .modal-title {
+  font-weight: bold;
+  font-size: 28px;
+}
+.testimonial-modal .modal-content .modal-body .testimonial-form form .input-group {
+  margin-bottom: 15px;
+}
+.testimonial-modal .modal-content .modal-body .testimonial-form form .input-group label,
+.testimonial-modal .modal-content .modal-body .testimonial-form form .input-group .form-control {
+  width: 100%;
+}
+.testimonial-modal .modal-content .modal-body .testimonial-form form .input-group label {
+  margin-bottom: 10px;
+}
+.testimonial-modal .modal-content .modal-body .testimonial-form form .input-group .form-control {
+  border-radius: 5px;
+}
+
 .btn-round-line,
 .btn-light-blue,
-.btn-red {
+.btn-red,
+.btn-gold,
+.btn-line-gold,
+.btn-orange,
+.btn-line-orange {
   transition: all 0.3s ease-in;
-  padding: 1em;
+  padding: 0.75em 1em;
   font-weight: bold;
   font-size: 14px;
   line-height: normal;
@@ -2284,7 +2691,11 @@ section.home-banner.testimonials {
 }
 .btn-round-line:hover,
 .btn-light-blue:hover,
-.btn-red:hover {
+.btn-red:hover,
+.btn-gold:hover,
+.btn-line-gold:hover,
+.btn-orange:hover,
+.btn-line-orange:hover {
   transition: all 0.3s ease-out;
   transform: translateX(0px) translateY(-5px);
   transform-style: preserve-3d;
@@ -2295,7 +2706,11 @@ section.home-banner.testimonials {
 @media (max-width: 767px) {
   .btn-round-line,
   .btn-light-blue,
-  .btn-red {
+  .btn-red,
+  .btn-gold,
+  .btn-line-gold,
+  .btn-orange,
+  .btn-line-orange {
     width: 100%;
     display: block;
     max-width: 100%;
@@ -2333,8 +2748,53 @@ section.home-banner.testimonials {
   color: #7c1813;
 }
 
+.btn-gold {
+  color: #fff;
+  background-color: #c09f29;
+  border: solid 1px #c09f29;
+}
+.btn-gold:hover {
+  color: #fff;
+}
+
+.btn-line-gold {
+  border: solid 1px #c09f29;
+  border-radius: 5px;
+  color: #c09f29;
+  background: transparent;
+}
+.btn-line-gold:hover {
+  background-color: #c09f29;
+  color: #fff;
+}
+
 .btn-round {
   border-radius: 50px !important;
+}
+
+.btn-orange {
+  color: #fff;
+  background-color: #dd9c29;
+  border: solid 1px #dd9c29;
+}
+.btn-orange:hover {
+  color: #fff;
+}
+
+.btn-line-orange {
+  border: solid 1px #dd9c29;
+  border-radius: 5px;
+  color: #dd9c29;
+  background: transparent;
+}
+.btn-line-orange:hover {
+  background-color: #dd9c29;
+  color: #fff;
+}
+
+.btn-full {
+  width: 100%;
+  display: block;
 }
 
 button,

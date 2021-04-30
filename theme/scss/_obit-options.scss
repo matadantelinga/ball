@@ -1,3 +1,13 @@
+.secondary-title {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: "Montserrat", serif;
+	@media (max-width: 767px) {
+		font-size: 30px;
+	}
+}
+
+// Homepage obit
 .obuturies-wrapper {
 	/* Enable when obit option 3 is choosen */
 	&.obit-option3 {
@@ -130,5 +140,194 @@
 
 	.subscribe-text.items-option3 {
 		padding: 1.5em 15px 2em;
+	}
+}
+
+// Listpage obit
+
+#obituaries-page {
+	background: #e9edf1;
+	overflow: hidden;
+	.search-form-wrapper {
+		background: #fff;
+		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.08);
+		padding: 40px;
+		border-radius: 5px;
+		margin-bottom: 3em;
+		@media (max-width: 767px) {
+			padding: 40px 15px;
+			margin: -60px -15px 2em;
+			border-radius: 0;
+		}
+		form {
+			.input-group {
+				border: solid 1px #d6d6d6;
+				border-radius: 5px;
+				overflow: hidden;
+				.form-control {
+					border: none;
+					border-radius: 0;
+					flex: 0 0 95%;
+					max-width: 95%;
+				}
+				button {
+					max-width: 5%;
+					flex: 0 0 5%;
+					background: none;
+				}
+				.form-control,
+				button {
+					height: 50px;
+				}
+
+				.form-control {
+					transition: all 0.3s ease;
+					&:focus {
+						outline: none;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			form {
+				margin-top: 15px;
+				.input-group {
+					.form-control {
+						flex: 0 0 80%;
+						max-width: 80%;
+					}
+					button {
+						flex: 0 0 20%;
+						max-width: 20%;
+					}
+				}
+			}
+		}
+	}
+	.subscribes-form {
+		padding: 60px 20px;
+		border-radius: 3px;
+		background-color: #fff;
+		background-image: url(../assets/newsletter-bg.jpg);
+		background-position: bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+		box-shadow: none;
+
+		.form-content {
+			margin: 0 10px;
+			text-align: center;
+			.form-title {
+				font-weight: bold;
+				font-size: 24px;
+			}
+			p {
+				margin: 20px 0;
+				font-size: 16px;
+				line-height: normal;
+			}
+			form {
+				.input-group {
+					margin-bottom: 10px;
+				}
+				.form-control {
+					width: 100%;
+				}
+				.form-control {
+					height: 40px;
+				}
+				.btn-gold {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+	}
+	// General styling
+	.obituaries-item {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 2em;
+
+		.obituaries-image {
+			flex: 0 0 30%;
+			max-width: 30%;
+			background: #fff;
+			padding: 7px;
+			border-radius: 5px;
+			overflow: hidden;
+			height: 311px;
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.obituaries-properties {
+			flex: 0 0 70%;
+			max-width: 70%;
+			padding: 10px 10px 10px 25px;
+			.obit-name {
+				font-weight: bold;
+				font-size: 24px;
+			}
+			span {
+				display: block;
+				margin: 12px 0 7px;
+			}
+			p {
+				margin-bottom: 0;
+			}
+			.btn-wrapper {
+				margin: 30px 0 0;
+
+				@media (max-width: 767px) {
+					a {
+						display: block;
+						&:first-child {
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+
+		@media (max-width: 767px) {
+			.obituaries-image {
+				max-width: 70%;
+				flex: 0 0 70%;
+				margin: 0 auto 15px;
+			}
+			.obituaries-properties {
+				flex: 0 0 100%;
+				max-width: 100%;
+				.obit-name,
+				span {
+					text-align: center;
+				}
+			}
+			.obituaries-properties {
+				padding: 10px 0;
+			}
+		}
+	}
+	// Option styling
+	&.obituaries-option3,
+	&.obituaries-option4 {
+		.search-form-wrapper {
+			form {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	&.obituaries-option4 {
+		.obituaries-item {
+			background: #fff;
+			padding: 1em;
+			box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.08);
+		}
 	}
 }

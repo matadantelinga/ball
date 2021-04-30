@@ -7,6 +7,171 @@ section {
 	}
 }
 
+// Homepage
+.homepage-testimonials {
+	padding: 100px 0;
+	float: left;
+	width: 100%;
+
+	.test-heading {
+		width: 100%;
+		h2 {
+			font-family: "Playfair Display", sans-serif;
+			color: #09233f;
+			font-size: 36px;
+			text-align: center;
+			margin-bottom: 35px;
+			font-weight: 600;
+		}
+	}
+	// Box style
+	.test-item {
+		width: 100%;
+		padding: 20px;
+		.test-item-inner {
+			padding: 40px 30px;
+			border-style: none;
+			border-width: 1px;
+			border-color: #93791d;
+			border-radius: 5px;
+			background-color: #edf0f3;
+			color: #09233f;
+			p {
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 28px;
+				font-weight: 400;
+				text-align: center;
+			}
+			h4 {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				letter-spacing: 0px;
+				text-decoration: none;
+				text-transform: capitalize;
+				text-align: center;
+			}
+			.name {
+				color: #09233f;
+				font-size: 16px;
+				font-weight: 700;
+			}
+
+			.properties {
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				.user-detail {
+					.position {
+						font-size: 13px;
+						color: #d5d5d5;
+					}
+				}
+			}
+			.test-item-footer {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.rate-box {
+					img {
+						width: 100%;
+						max-width: 120px;
+					}
+				}
+				.google-icon {
+					margin-right: 10px;
+					img {
+						width: 30px;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+	// testimonials-option1
+	&.testimonials-option1,
+	&.testimonials-option3 {
+		.test-item {
+			.test-item-inner {
+				background-color: transparent;
+				p {
+					text-align: left;
+					font-style: italic;
+				}
+				h4.name {
+					display: none;
+				}
+				.test-item-footer {
+					display: block;
+					.rate-box {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+		.slick-arrow {
+			img {
+				max-height: 20px;
+			}
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	&.testimonials-option1 {
+		.slick-arrow {
+			background-color: #fff;
+			border-radius: 100%;
+			height: 50px;
+			width: 50px;
+			box-shadow: 1px 1px 10px -4px rgba(0, 0, 0, 0.75);
+			-webkit-box-shadow: 1px 1px 10px -4px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 1px 1px 10px -4px rgba(0, 0, 0, 0.75);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 15;
+		}
+	}
+
+	&.testimonials-option3 {
+		background: url(../assets/testi-bg.png) center center no-repeat;
+		background-size: cover;
+		margin-bottom: 60px;
+		.test-heading {
+			h2 {
+				color: #fff;
+			}
+		}
+		.test-item {
+			.test-item-inner {
+				color: #fff;
+				text-align: center;
+				p {
+					text-align: center;
+				}
+				.test-item-footer {
+					.rate-box {
+						img {
+							margin: 0 auto 1rem;
+						}
+					}
+					.properties {
+						justify-content: center;
+						.user-detail {
+							.name, .position {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// List page
 .testimonials-container {
 	background-color: #fff;
 	.d-flex {
@@ -92,20 +257,69 @@ section {
 	}
 	&.testimonial-option2 {
 		.testimonial-item {
-      margin-bottom: 60px;
-      .testi-header {
-        .testi-user {
-          display: none;
-        }
-      }
-  
-      .testi-footer {
-        .testi-properties {
-          .name {
-            color: $lightBlue;
-          }
-        }
-      }
-    }
+			margin-bottom: 60px;
+			.testi-header {
+				.testi-user {
+					display: none;
+				}
+			}
+
+			.testi-footer {
+				.testi-properties {
+					.name {
+						color: $lightBlue;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Testimonial shared component
+
+.testimonial-modal {
+	@media (min-width: 992px) {
+		.modal-lg {
+			max-width: 65%;
+		}
+	}
+	.modal-content {
+		color: #000;
+		background-color: #fff;
+		.close-btn {
+			text-align: right;
+			padding: 1em;
+			font-size: 24px;
+			color: #d5d5d5;
+			position: absolute;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+			z-index: 5;
+		}
+		.modal-body {
+			padding: 2.25rem 2rem 2rem;
+			.modal-title {
+				font-weight: bold;
+				font-size: 28px;
+			}
+			.testimonial-form {
+				form {
+					.input-group {
+						margin-bottom: 15px;
+						label,
+						.form-control {
+							width: 100%;
+						}
+						label {
+							margin-bottom: 10px;
+						}
+						.form-control {
+							border-radius: 5px;
+						}
+					}
+				}
+			}
+		}
 	}
 }

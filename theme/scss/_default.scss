@@ -842,6 +842,7 @@ h5.heading-help {
 
 .address-wrapper .map-wrapper {
 	margin-bottom: 30px;
+	padding: 5px;
 }
 
 h2.content-sub-title {
@@ -864,11 +865,13 @@ h2.content-sub-title {
 	width: 33.33%;
 }
 
-.loc-img-list img {
-	width: 100%;
-	padding: 10px;
-	height: 220px;
-	object-fit: cover;
+.loc-img-list {
+	padding: 5px;
+	img {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+	}
 }
 
 .contact-form label {
@@ -951,9 +954,12 @@ section.services-container {
 	font-weight: 900;
 }
 
-.full-img img {
-	width: 100%;
-	margin-bottom: 25px;
+.full-img {
+	padding: 5px;
+	img {
+		width: 100%;
+		margin-bottom: 25px;
+	}
 }
 
 .grid-img {
