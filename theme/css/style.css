@@ -2195,7 +2195,7 @@ ul.footer-list {
 }
 #obituaries-page .subscribes-form {
   padding: 60px 20px;
-  border-radius: 3px;
+  border-radius: 8px;
   background-color: #fff;
   background-image: url(../assets/newsletter-bg.jpg);
   background-position: bottom;
@@ -2301,6 +2301,49 @@ ul.footer-list {
   background: #fff;
   padding: 1em;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.pagination {
+  margin: 2em 0;
+  justify-content: flex-end;
+}
+.pagination a {
+  color: #09233f;
+}
+.pagination .pagination-nav a {
+  border: solid 1px #09233f;
+  padding: 7px 10px;
+  display: block;
+}
+.pagination .pagination-nav a:hover {
+  background-color: #09233f;
+  color: #fff;
+}
+.pagination .pagination-nav a.disabled {
+  color: #d5d5d5;
+  border: solid 1px #d5d5d5;
+}
+.pagination .pagination-nav a.disabled:hover {
+  background-color: transparent;
+  color: #d5d5d5;
+}
+.pagination .pagination-nums {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+.pagination .pagination-nums a {
+  padding: 7px 10px;
+  margin: 0 5px;
+  min-width: 40px;
+  text-align: center;
+  display: block;
+}
+.pagination .pagination-nums a:hover, .pagination .pagination-nums a.active {
+  background-color: #09233f;
+  border: solid 1px #09233f;
+  color: #fff;
 }
 
 .staff-widget-wrapper {
@@ -2565,7 +2608,8 @@ section.home-banner.testimonials {
 .homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties {
   justify-content: center;
 }
-.homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties .user-detail .name, .homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties .user-detail .position {
+.homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties .user-detail .name,
+.homepage-testimonials.testimonials-option3 .test-item .test-item-inner .test-item-footer .properties .user-detail .position {
   color: #fff;
 }
 
@@ -2688,6 +2732,11 @@ section.home-banner.testimonials {
 }
 .testimonial-modal .modal-content .modal-body .testimonial-form form .input-group .form-control {
   border-radius: 5px;
+}
+.testimonial-modal .modal-content .modal-body .testimonial-form form .input-group .form-control:focus {
+  border: solid 1px #3281d1;
+  box-shadow: none;
+  outline: none;
 }
 
 .btn-round-line,

@@ -40,7 +40,9 @@
 					</div>
 					<div class="quick-links">
 						<a href="contact.html"> <img src="./theme/assets/email.png" alt="" />CONTACT US</a>
-						<a href="send-flowers.html"> <img src="./theme/assets/flower.png" alt="" />SEND FLOWERS</a>
+						<a href="send-flowers.html">
+							<img src="./theme/assets/flower.png" alt="" />SEND FLOWERS</a
+						>
 					</div>
 				</div>
 			</div>
@@ -179,14 +181,20 @@
 			</div>
 		</section>
 
-    <section class="content-padding testimonials-container">
+		<section class="content-padding testimonials-container">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="d-flex align-items-center">
 							<h1 class="pageheadings">Testimonials</h1>
 							<div class="btn-wrapper">
-								<a href="#" data-toggle="modal" data-target="#testimonialModal" class="btn-light-blue btn-round">Add your testimonial</a>
+								<a
+									href="#"
+									data-toggle="modal"
+									data-target="#testimonialModal"
+									class="btn-light-blue btn-round"
+									>Add your testimonial</a
+								>
 							</div>
 						</div>
 						<p class="content-text">
@@ -451,40 +459,46 @@
 				<div class="modal-content">
 					<i class="fa fa-times close-btn" data-dismiss="modal" aria-label="Close"></i>
 					<div class="modal-body">
-						<div class="modal-title">Submit a testimonial</div>
-						<p>
-							We are honored to have served your family in your time of need and we value feedback from our families.  Please share your thoughts on the service we provided.
-						</p>
-						<div class="testimonial-form">
-							<form action="#">
-								<div class="input-group">
-									<label>Name</label>
-									<input type="text" class="form-control" name="nae">
-								</div>
-								<div class="input-group">
-									<label>Email Address</label>
-									<input type="email" class="form-control" name="email">
-								</div>
-								<div class="input-group">
-									<label>Your Testimonial</label>
-									<textarea rows="5" class="form-control" name="testimonial"></textarea>
-								</div>
-								<div class="text-right">
-									<button type="submit" class="btn-light-blue btn-round">Submit</button>
-								</div>
-								<div id="form_error"></div>
-							</form>
+						<div id="testimonial_form_wrapper">
+							<div class="modal-title">Submit a testimonial</div>
+							<p>
+								We are always interested in hearing from the families that we serve. Please take a
+								moment to let us know how well we served you in your time of need. We very much
+								appreciate your feedback.
+							</p>
+							<div class="testimonial-form">
+								<form id="testimonial_form" action="#">
+									<div class="input-group">
+										<label>Name</label> <input type="text" class="form-control" name="name" />
+									</div>
+									<div class="input-group">
+										<label>Email Address</label>
+										<input type="email" name="email" class="form-control" />
+									</div>
+									<div class="input-group">
+										<label>Your Testimonial</label>
+										<textarea name="testimonial" rows="5" class="form-control"></textarea>
+									</div>
+									<div class="text-right">
+										<button type="submit" class="btn-light-blue btn-round">Submit</button>
+									</div>
+									<div id="form_error"></div>
+								</form>
+							</div>
 						</div>
-						<div id="form_thankyou" style="display: none;">
+						<div id="form_thankyou" style="display: none">
 							<h3 class="modal-title">Thank you</h3>
-							<p>We appreciate you taking the time to share your thoughts about the services we provided for your family.</p>
-					</div>
+							<p>
+								We appreciate you taking the time to share your thoughts about the services we
+								provided for your family.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--end-->
-		
+
 		<!--Footer-->
 		<footer class="footer">
 			<div class="container">

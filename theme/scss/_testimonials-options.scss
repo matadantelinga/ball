@@ -160,7 +160,8 @@ section {
 					.properties {
 						justify-content: center;
 						.user-detail {
-							.name, .position {
+							.name,
+							.position {
 								color: #fff;
 							}
 						}
@@ -316,6 +317,11 @@ section {
 						}
 						.form-control {
 							border-radius: 5px;
+							&:focus {
+								border: solid 1px #3281d1;
+								box-shadow: none;
+								outline: none;
+							}
 						}
 					}
 				}
