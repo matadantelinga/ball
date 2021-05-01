@@ -2181,9 +2181,6 @@ ul.footer-list {
   align-items: center;
   flex-wrap: wrap;
 }
-.home-obit-wrapper .obit-items-wrapper .obit-item {
-  margin-bottom: 15px;
-}
 .home-obit-wrapper .obit-items-wrapper .obit-item .obit-image {
   display: flex;
   align-items: center;
