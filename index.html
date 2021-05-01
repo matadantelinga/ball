@@ -9,6 +9,7 @@
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		/>
 		<link rel="stylesheet" href="./theme/plugin/slick/slick.css" />
+		<link rel="stylesheet" href="./theme/plugin/slick/slick-theme.css" />
 		<link rel="stylesheet" href="./theme/css/style.css" />
 		<meta
 			name="description"
@@ -40,7 +41,9 @@
 					</div>
 					<div class="quick-links">
 						<a href="contact.html"> <img src="./theme/assets/email.png" alt="" />CONTACT US</a>
-						<a href="send-flowers.html"> <img src="./theme/assets/flower.png" alt="" />SEND FLOWERS</a>
+						<a href="send-flowers.html">
+							<img src="./theme/assets/flower.png" alt="" />SEND FLOWERS</a
+						>
 					</div>
 				</div>
 			</div>
@@ -59,7 +62,9 @@
 							</button>
 						</div>
 						<ul class="navbar-list">
-							<li class="nav-item"><a class="nav-link hide-on-mobile" href="index.html">home</a></li>
+							<li class="nav-item">
+								<a class="nav-link hide-on-mobile" href="index.html">home</a>
+							</li>
 							<li class="nav-item">
 								<a class="nav-link hide-on-mobile" href="obituaries.html">Obituaries</a>
 							</li>
@@ -176,102 +181,229 @@
 					<h1>Celebrating</h1>
 					<h2>Life</h2>
 				</div>
-				<div class="tribute-inner">
-					<div class="tribute-frame">
-						<div class="tribute-header">
-							<h3>Current Tributes <a href="obituary">VIEW ALL</a></h3>
-							<div class="search-tribute">
-								<input type="text" class="form-control" placeholder="Search Tribute" />
+				<!--Remove homeobit-option2 to activate default option-->
+				<!--Add homeobit-option2 here to activate option 2-->
+				<!--add class text-white nopadding to change styles on container that has background-->
+				<section class="home-obit-wrapper text-white nopadding homeobit-option2">
+					<div class="container">
+						<div class="obit-header">
+							<form action="#">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search obituaries" />
+									<button><i class="fas fa-search"></i></button>
+								</div>
+							</form>
+							<div class="obit-title">
+								<span class="text"> Current Obituaries </span>
+								<span class="divider">&nbsp;</span>
+								<a href="obituaries.html">VIEW ALL</a>
+							</div>
+							<div class="obit-btn">
+								<a class="btn-round btn-gold" href="obituaries.html">VIEW ALL</a>
 							</div>
 						</div>
-						<div class="tribute-slider">
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+						<!--Defult Options-->
+						<!--Add #obit-slides to activate slide-->
+						<div id="obit-slides" class="obit-items-wrapper">
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<!--2nd row-->
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
 							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
-							</div>
-							<div class="tribute-box">
-								<div class="tribute-box-inner">
-									<img src="./theme/assets/obit1.jpg" alt="" />
-									<h4>Stephen Freeman</h4>
-									<p>May 17, 2017</p>
-								</div>
-							</div>
+						</div>
+						<!--End Default-->
+						<div class="subscribe-text">
+							<a href="#">Subscribe</a> for email updates when new obituaries are posted
 						</div>
 					</div>
-				</div>
+
+					<!--Obit options 2-->
+					<div class="obit-container">
+						<div class="obit-items-wrapper">
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="overlay"></div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
+							</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="overlay"></div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
+							</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="overlay"></div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
+							</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="overlay"></div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
+							</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="overlay"></div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
+							</div>
+							<div class="obit-item">
+								<a href="#">
+									<div class="obit-image">
+										<img src="./theme/assets/obit-dummy.png" alt="" />
+									</div>
+									<div class="overlay"></div>
+									<div class="obit-properties">
+										<div class="obit-name">John Philip Doe</div>
+										<div class="obit-date">March 22, 2030</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="subscribe-text">
+							<a href="#">Subscribe</a> for email updates when new obituaries are posted
+						</div>
+					</div>
+				</section>
 			</div>
 		</section>
 		<section class="welcome-msg">
@@ -313,7 +445,7 @@
 		<section class="main-links">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-md-4">
 						<div class="main-link-box">
 							<a href="">
 								<img src="./theme/assets/our-service.jpg" alt="" />
@@ -321,7 +453,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-md-4">
 						<div class="main-link-box">
 							<a href="">
 								<img src="./theme/assets/plane-ahead.jpg" alt="" />
@@ -329,7 +461,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-md-4">
 						<div class="main-link-box">
 							<a href="">
 								<img src="./theme/assets/send-flowers.jpg" alt="" />
@@ -340,89 +472,190 @@
 				</div>
 			</div>
 		</section>
-		<section class="test-section">
+		<!--add testimonials-option1 to activate option 1-->
+		<!--add testimonials-option3 to activate option 3-->
+		<section class="homepage-testimonials testimonials-option3">
 			<div class="container">
-				<h1 class="wel-section-title">Testimonials & Reviews</h1>
-				<div class="test-wrapper">
-					<div class="test-box">
-						<div class="test-box-inner">
-							<p>
-								Ball Family Chapel always does an incredible job and are so personable. They really
-								go above and beyond what is asked of them and make you feel truely cared for and
-								listened to. I fully recommend Ball Family Chapel to anyone.
-							</p>
-							<h3>DAXX STRYKER</h3>
-							<div class="test-footer">
-								<div class="star"><img src="./theme/assets/pointed-star.svg" alt="" /></div>
-								<div class="google-icon">
-									<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+				<div class="test-heading">
+					<h2>See What Other Families Are Saying About Us</h2>
+				</div>
+				<!--Add #testimonial-box-slider id to activate box style slider with 3items per slide-->
+				<!-- <div id="testimonial-box-slider">
+					<div class="slick-item">
+						<div class="test-item">
+							<div class="test-item-inner">
+								<p>
+									Professional but compassionate.. I could not have managed everything after the
+									death of my son without their help. There are no words to express my gratitude to
+									Jeff and his staff.
+								</p>
+								<h4>Janette Smith</h4>
+
+								<div class="test-item-footer">
+									<div class="rate-box">
+										<img src="./theme/assets/pointed-star.svg" alt="" />
+									</div>
+
+									<div class="google-icon">
+										<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="test-box">
-						<div class="test-box-inner">
-							<p>
-								Ball Family Chapel always does an incredible job and are so personable. They really
-								go above and beyond what is asked of them.
-							</p>
-							<h3>DAXX STRYKER</h3>
-							<div class="test-footer">
-								<div class="star"><img src="./theme/assets/pointed-star.svg" alt="" /></div>
-								<div class="google-icon">
-									<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+					<div class="slick-item">
+						<div class="test-item">
+							<div class="test-item-inner">
+								<p>
+									Professional but compassionate.. I could not have managed everything after the
+									death of my son without their help. There are no words to express my gratitude to
+									Jeff and his staff.
+								</p>
+								<h4>Janette Smith</h4>
+
+								<div class="test-item-footer">
+									<div class="rate-box">
+										<img src="./theme/assets/pointed-star.svg" alt="" />
+									</div>
+
+									<div class="google-icon">
+										<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="test-box">
-						<div class="test-box-inner">
-							<p>
-								Ball Family Chapel always does an incredible job and are so personable. They really
-								go above and beyond what is asked of them.
-							</p>
-							<h3>DAXX STRYKER</h3>
-							<div class="test-footer">
-								<div class="star"><img src="./theme/assets/pointed-star.svg" alt="" /></div>
-								<div class="google-icon">
-									<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+					<div class="slick-item">
+						<div class="test-item">
+							<div class="test-item-inner">
+								<p>
+									Professional but compassionate.. I could not have managed everything after the
+									death of my son without their help. There are no words to express my gratitude to
+									Jeff and his staff.
+								</p>
+								<h4>Janette Smith</h4>
+
+								<div class="test-item-footer">
+									<div class="rate-box">
+										<img src="./theme/assets/pointed-star.svg" alt="" />
+									</div>
+
+									<div class="google-icon">
+										<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="test-box">
-						<div class="test-box-inner">
-							<p>
-								Ball Family Chapel always does an incredible job and are so personable. They really
-								go above and beyond what is asked of them.
-							</p>
-							<h3>DAXX STRYKER</h3>
-							<div class="test-footer">
-								<div class="star"><img src="./theme/assets/pointed-star.svg" alt="" /></div>
-								<div class="google-icon">
-									<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+					<div class="slick-item">
+						<div class="test-item">
+							<div class="test-item-inner">
+								<p>
+									Professional but compassionate.. I could not have managed everything after the
+									death of my son without their help. There are no words to express my gratitude to
+									Jeff and his staff.
+								</p>
+								<h4>Janette Smith</h4>
+
+								<div class="test-item-footer">
+									<div class="rate-box">
+										<img src="./theme/assets/pointed-star.svg" alt="" />
+									</div>
+
+									<div class="google-icon">
+										<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="test-box">
-						<div class="test-box-inner">
-							<p>
-								Ball Family Chapel always does an incredible job and are so personable. They really
-								go above and beyond what is asked of them.
-							</p>
-							<h3>DAXX STRYKER</h3>
-							<div class="test-footer">
-								<div class="star"><img src="./theme/assets/pointed-star.svg" alt="" /></div>
-								<div class="google-icon">
-									<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+					<div class="slick-item">
+						<div class="test-item">
+							<div class="test-item-inner">
+								<p>
+									Professional but compassionate.. I could not have managed everything after the
+									death of my son without their help. There are no words to express my gratitude to
+									Jeff and his staff.
+								</p>
+								<h4>Janette Smith</h4>
+
+								<div class="test-item-footer">
+									<div class="rate-box">
+										<img src="./theme/assets/pointed-star.svg" alt="" />
+									</div>
+
+									<div class="google-icon">
+										<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!--end-->
+				<!--Add #testimonial-slider id to activate slider with 1items per slide for Option 1 and 3-->
+				<div id="testimonial-slider">
+					<div class="slick-item">
+						<div class="test-item">
+							<div class="test-item-inner">
+								<p>
+									"Professional but compassionate.. I could not have managed everything after the
+									death of my son without their help. There are no words to express my gratitude to
+									Jeff and his staff."
+								</p>
+								<h4 class="name">Janette Smith</h4>
+
+								<div class="test-item-footer">
+									<div class="rate-box">
+										<img src="./theme/assets/pointed-star.svg" alt="" />
+									</div>
+									<div class="properties">
+										<div class="google-icon">
+											<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+										</div>
+										<div class="user-detail">
+											<div class="name">Janette Smith</div>
+											<div class="position">Happy customer</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slick-item">
+						<div class="test-item">
+							<div class="test-item-inner">
+								<p>
+									"Professional but compassionate.. I could not have managed everything after the
+									death of my son without their help. There are no words to express my gratitude to
+									Jeff and his staff."
+								</p>
+								<h4 class="name">Janette Smith</h4>
+
+								<div class="test-item-footer">
+									<div class="rate-box">
+										<img src="./theme/assets/pointed-star.svg" alt="" />
+									</div>
+									<div class="properties">
+										<div class="google-icon">
+											<img src="./theme/assets/Google-Reviews-icon.png" alt="" />
+										</div>
+										<div class="user-detail">
+											<div class="name">Janette Smith</div>
+											<div class="position">Happy customer</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="text-center mt-4 mb-3">
+					<a href="./testimonials.html" class="btn-orange">View more</a>
+				</div>
 			</div>
 		</section>
+
 		<section class="address-content">
 			<div class="inner-address-page-contnt">
 				<div class="addresss-wrapper">

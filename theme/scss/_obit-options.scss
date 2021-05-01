@@ -8,22 +8,103 @@
 }
 
 // Homepage obit
-.obuturies-wrapper {
-	/* Enable when obit option 3 is choosen */
-	&.obit-option3 {
-		padding: 60px 0 0;
-
-		.obit-noti {
+.home-obit-wrapper {
+	padding: 60px 0;
+	#obit-slides {
+		.slick-next,
+		.slick-prev {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slick-prev:before,
+		.slick-next:before {
 			display: none;
 		}
 
-		.view-all-obit {
-			padding-bottom: 60px;
+		&.obit-items-wrapper {
+			.obit-item {
+				.obit-image {
+					border-radius: 100%;
+					overflow: hidden;
+					max-height: 150px;
+					width: 150px;
+					margin: 0 auto 10px;
+				}
+			}
 		}
 	}
 
-	.obit-container {
-		background-color: #09233f;
+	.obit-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+		.obit-title {
+			font-weight: bold;
+			font-size: 48px;
+			flex: 1;
+			margin: 0 10px;
+			text-align: center;
+
+			.divider,
+			a {
+				display: none;
+			}
+		}
+
+		form {
+			border: solid 1px #d6d6d6;
+			border-radius: 50px;
+			overflow: hidden;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			.input-group {
+				align-items: center;
+				.form-control {
+					border: none;
+					flex: 0 0 80%;
+					max-width: 80%;
+					height: 100%;
+					background: transparent;
+					&:focus {
+						outline: none;
+						box-shadow: none;
+					}
+				}
+				button {
+					height: 100%;
+					flex: 0 0 20%;
+					max-width: 20%;
+					background-color: transparent;
+					border: none;
+					&:focus {
+						outline: none;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+			flex-direction: column-reverse;
+			.obit-title {
+				line-height: 50px;
+				margin: 20px 0 15px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			justify-content: center;
+			.obit-title {
+				margin: 20px 0 15px;
+				line-height: 50px;
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
 	}
 
 	.obit-items-wrapper {
@@ -51,62 +132,11 @@
 				}
 			}
 		}
-		&.items-default {
-			margin: 0 -15px;
-			.obit-item {
-				flex: 0 0 20%;
-				max-width: 25%;
-				padding: 0 15px;
-				.obit-image {
-					border-radius: 100%;
-					overflow: hidden;
-					max-height: 150px;
-					width: 150px;
-					margin: 0 auto 10px;
-				}
-			}
-		}
-		&.items-option3 {
-			.obit-item {
-				flex: 0 0 16.6%;
-				max-width: 16.6%;
-				position: relative;
-				.obit-properties {
-					color: #fff;
-					position: absolute;
-					bottom: 20px;
-					left: 50%;
-					transform: translateX(-50%);
-					width: 100%;
-					padding: 0 10px;
-				}
-				.overlay {
-					background: rgb(255, 255, 255);
-					background: -moz-linear-gradient(
-						180deg,
-						rgba(255, 255, 255, 0) 60%,
-						rgba(0, 0, 0, 1) 97%
-					);
-					background: -webkit-linear-gradient(
-						180deg,
-						rgba(255, 255, 255, 0) 60%,
-						rgba(0, 0, 0, 1) 97%
-					);
-					background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 1) 97%);
-					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: 50%;
-				}
-			}
-		}
 	}
 	.subscribe-text {
 		width: 100%;
+		padding: 30px 0;
 		text-align: center;
-		color: #fff;
 		a {
 			color: #c5a11f;
 		}
@@ -114,32 +144,140 @@
 			padding: 1em 0 2em;
 		}
 	}
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-	.obuturies-wrapper .obit-items-wrapper.items-option3 .obit-item,
-	.obuturies-wrapper .obit-items-wrapper.items-default .obit-item {
-		flex: 0 0 33.3%;
-		max-width: 33.3%;
+	.obit-container {
+		display: none;
 	}
-}
+	&.homeobit-option2 {
+		display: block;
+		#obit-slides {
+			display: none;
+		}
+		.obit-header {
+			flex-direction: row-reverse;
+			.obit-btn {
+				display: none;
+			}
+			.obit-title {
+				text-align: left;
+				display: flex;
+				align-items: center;
+				.divider,
+				a {
+					display: flex;
+					align-items: center;
+				}
+				a {
+					font-size: 16px;
+					color: #000;
+					&:hover {
+						color: #c5a11f;
+					}
+				}
+				.divider {
+					width: 3px;
+					height: 40px;
+					background-color: #d5d5d5;
+					margin: 0 20px;
+				}
+			}
+			form {
+				border-radius: 0;
+			}
 
-@media (max-width: 767px) {
-	.obuturies-wrapper .obit-items-wrapper {
-		padding: 0 15px;
-	}
-	.obuturies-wrapper .obit-items-wrapper.items-option3 .obit-item {
-		flex: 0 0 100%;
-		max-width: 100%;
+			@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+				.obit-title {
+					font-size: 30px;
+				}
+			}
+			@media (max-width: 767px) {
+				.obit-title {
+					font-size: 26px;
+					flex-wrap: wrap;
+					.divider {
+						margin: 0 5px;
+					}
+					a {
+						font-size: 14px;
+					}
+				}
+				form {
+					width: 100%;
+				}
+			}
+		}
+		.obit-item {
+			flex: 0 0 16.6%;
+			max-width: 16.6%;
+			position: relative;
+			.obit-properties {
+				color: #fff;
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				padding: 0 10px;
+			}
+			.overlay {
+				background: rgb(255, 255, 255);
+				background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 1) 97%);
+				background: -webkit-linear-gradient(
+					180deg,
+					rgba(255, 255, 255, 0) 60%,
+					rgba(0, 0, 0, 1) 97%
+				);
+				background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 1) 97%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 50%;
+			}
+
+			@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+				flex: 0 0 33.3%;
+				max-width: 33.3%;
+			}
+			@media (max-width: 767px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+		.subscribe-text {
+			display: none;
+		}
+
+		.obit-container {
+			display: block;
+			background-color: #09233f;
+			.subscribe-text {
+				display: block;
+				color: #fff;
+			}
+		}
 	}
 
-	.obuturies-wrapper .obit-items-wrapper.items-default .obit-item {
-		flex: 0 0 50%;
-		max-width: 50%;
+	&.text-white {
+		.obit-header {
+			.obit-title,
+			form .form-control::placeholder,
+			form button i,
+			.obit-title a {
+				color: #fff;
+			}
+		}
+		.obit-items-wrapper .obit-item .obit-properties .obit-name,
+		.obit-items-wrapper .obit-item .obit-properties .obit-date {
+			color: #fff;
+		}
 	}
-
-	.subscribe-text.items-option3 {
-		padding: 1.5em 15px 2em;
+	&.nopadding {
+		@media (max-width: 767px) {
+			.obit-header {
+				padding: 0 15px;
+			}
+		}
 	}
 }
 
@@ -369,7 +507,8 @@
 			min-width: 40px;
 			text-align: center;
 			display: block;
-			&:hover, &.active {
+			&:hover,
+			&.active {
 				background-color: #09233f;
 				border: solid 1px #09233f;
 				color: #fff;

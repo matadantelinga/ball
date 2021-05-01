@@ -138,7 +138,6 @@ section {
 	&.testimonials-option3 {
 		background: url(../assets/testi-bg.png) center center no-repeat;
 		background-size: cover;
-		margin-bottom: 60px;
 		.test-heading {
 			h2 {
 				color: #fff;
@@ -186,6 +185,9 @@ section {
 				margin: 20px 0 0;
 			}
 		}
+	}
+	.content-text {
+		margin-top: 25px;
 	}
 }
 

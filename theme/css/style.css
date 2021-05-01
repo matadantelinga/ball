@@ -24,6 +24,19 @@ button.btn:focus {
   padding: 60px 0;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
 .tribute-header h3 a {
   font-size: 16px;
   font-family: "DM Sans";
@@ -328,6 +341,11 @@ h2.wel-sub-title {
   height: 485px;
   object-fit: cover;
 }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .welcome-mg img {
+    height: 380px;
+  }
+}
 
 .btn.btn-primary {
   background: #dd9c29;
@@ -529,6 +547,11 @@ footer.footer {
 
 .footer-logo img {
   width: 200px;
+}
+@media (max-width: 767px) {
+  .footer-logo img {
+    width: 160px;
+  }
 }
 
 h4.footer-navigation-heading {
@@ -971,6 +994,15 @@ section.services-container {
 .why-choose-us h3 img {
   margin-right: 35px;
 }
+@media (max-width: 767px) {
+  .why-choose-us h3 {
+    font-size: 24px;
+  }
+  .why-choose-us h3 img {
+    margin-right: 10px;
+    max-height: 25px;
+  }
+}
 
 .s-service-content h2 {
   font-family: "Playfair Display";
@@ -996,6 +1028,11 @@ section.services-container {
 .grid-img img {
   width: 33.33%;
   padding: 5px;
+}
+@media (max-width: 767px) {
+  .grid-img img {
+    width: 50%;
+  }
 }
 
 .s-service-content p {
@@ -1067,8 +1104,19 @@ section.services-container {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .cre-img img {
+    max-height: 40px;
+  }
+}
+
 .cre-content {
   padding-left: 30px;
+}
+@media (max-width: 767px) {
+  .cre-content {
+    padding-left: 15px;
+  }
 }
 
 .cre-content h4 {
@@ -1097,10 +1145,16 @@ section.services-container {
 }
 
 .cre-mom-box > img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 169px;
+  border-radius: 100%;
+}
+@media (max-width: 767px) {
+  .cre-mom-box > img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .cre-mom-box {
@@ -1133,9 +1187,20 @@ section.services-container {
   width: 90px;
   height: 90px;
 }
+@media (max-width: 767px) {
+  .trad-box > img {
+    width: 48px;
+    height: 48px;
+  }
+}
 
 .trad-content {
   padding-left: 30px;
+}
+@media (max-width: 767px) {
+  .trad-content {
+    padding-left: 15px;
+  }
 }
 
 .trad-content p {
@@ -1415,7 +1480,7 @@ section.send-flower {
   .cre-mem .pageheadings,
   .why-plan-inner h3,
   section.faq-wrapper h2 {
-    font-size: 42px;
+    font-size: 30px;
   }
 
   .pre-plan-card-header span.text-wrapper {
@@ -1438,7 +1503,7 @@ section.send-flower {
   .cre-content h4,
   .cre-mom h2,
   .pre-wrapper h2 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .cre-mom h2 {
@@ -1461,10 +1526,12 @@ section.send-flower {
     width: 100%;
   }
 
+  .pre-img {
+    text-align: center;
+  }
+
   .pre-img > img {
-    width: 100%;
-    height: auto;
-    margin: 0;
+    margin: 0 auto 10px;
   }
 
   .pre-box {
@@ -1474,7 +1541,7 @@ section.send-flower {
   }
 
   .pre-content h4 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .pre-content p {
@@ -1491,7 +1558,7 @@ section.send-flower {
 
   .s-service-content {
     width: 100%;
-    padding: 30px 20px;
+    padding: 30px 0px;
   }
 
   .s-service-content h2 {
@@ -1564,7 +1631,7 @@ section.send-flower {
   }
 
   .inner-banner-content h3 {
-    font-size: 60px;
+    font-size: 38px;
   }
 
   .service-list .s-service-box:nth-child(even) {
@@ -1636,7 +1703,9 @@ section.send-flower {
   }
 
   .main-link-box a h3 {
-    font-size: 38px;
+    font-size: 25px;
+    left: 20px;
+    bottom: 20px;
   }
 
   .test-box {
@@ -1656,6 +1725,7 @@ section.send-flower {
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 15px;
   }
 
   .home-map-wrpper {
@@ -1999,7 +2069,7 @@ ul.footer-list {
 }
 @media (max-width: 767px) {
   .social-links {
-    margin-bottom: 20px;
+    margin: 25px 0;
     justify-content: center;
   }
 }
@@ -2015,68 +2085,201 @@ ul.footer-list {
   }
 }
 
-.obuturies-wrapper {
-  /* Enable when obit option 3 is choosen */
+.home-obit-wrapper {
+  padding: 60px 0;
 }
-.obuturies-wrapper.obit-option3 {
-  padding: 60px 0 0;
+.home-obit-wrapper #obit-slides .slick-next,
+.home-obit-wrapper #obit-slides .slick-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.obuturies-wrapper.obit-option3 .obit-noti {
+.home-obit-wrapper #obit-slides .slick-prev:before,
+.home-obit-wrapper #obit-slides .slick-next:before {
   display: none;
 }
-.obuturies-wrapper.obit-option3 .view-all-obit {
-  padding-bottom: 60px;
-}
-.obuturies-wrapper .obit-container {
-  background-color: #09233f;
-}
-.obuturies-wrapper .obit-items-wrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.obuturies-wrapper .obit-items-wrapper .obit-item {
-  margin-bottom: 15px;
-}
-.obuturies-wrapper .obit-items-wrapper .obit-item .obit-image {
-  display: flex;
-  align-items: center;
-}
-.obuturies-wrapper .obit-items-wrapper .obit-item .obit-image img {
-  width: 100%;
-  object-fit: cover;
-}
-.obuturies-wrapper .obit-items-wrapper .obit-item .obit-properties {
-  text-align: center;
-  color: #505050;
-}
-.obuturies-wrapper .obit-items-wrapper .obit-item .obit-properties .obit-name {
-  font-weight: bold;
-}
-.obuturies-wrapper .obit-items-wrapper .obit-item .obit-properties .obit-date {
-  font-size: 12px;
-}
-.obuturies-wrapper .obit-items-wrapper.items-default {
-  margin: 0 -15px;
-}
-.obuturies-wrapper .obit-items-wrapper.items-default .obit-item {
-  flex: 0 0 20%;
-  max-width: 25%;
-  padding: 0 15px;
-}
-.obuturies-wrapper .obit-items-wrapper.items-default .obit-item .obit-image {
+.home-obit-wrapper #obit-slides.obit-items-wrapper .obit-item .obit-image {
   border-radius: 100%;
   overflow: hidden;
   max-height: 150px;
   width: 150px;
   margin: 0 auto 10px;
 }
-.obuturies-wrapper .obit-items-wrapper.items-option3 .obit-item {
+.home-obit-wrapper .obit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.home-obit-wrapper .obit-header .obit-title {
+  font-weight: bold;
+  font-size: 48px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+.home-obit-wrapper .obit-header .obit-title .divider,
+.home-obit-wrapper .obit-header .obit-title a {
+  display: none;
+}
+.home-obit-wrapper .obit-header form {
+  border: solid 1px #d6d6d6;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.home-obit-wrapper .obit-header form .input-group {
+  align-items: center;
+}
+.home-obit-wrapper .obit-header form .input-group .form-control {
+  border: none;
+  flex: 0 0 80%;
+  max-width: 80%;
+  height: 100%;
+  background: transparent;
+}
+.home-obit-wrapper .obit-header form .input-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.home-obit-wrapper .obit-header form .input-group button {
+  height: 100%;
+  flex: 0 0 20%;
+  max-width: 20%;
+  background-color: transparent;
+  border: none;
+}
+.home-obit-wrapper .obit-header form .input-group button:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .home-obit-wrapper .obit-header {
+    flex-direction: column-reverse;
+  }
+  .home-obit-wrapper .obit-header .obit-title {
+    line-height: 50px;
+    margin: 20px 0 15px;
+  }
+}
+@media (max-width: 767px) {
+  .home-obit-wrapper .obit-header {
+    justify-content: center;
+  }
+  .home-obit-wrapper .obit-header .obit-title {
+    margin: 20px 0 15px;
+    line-height: 50px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.home-obit-wrapper .obit-items-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home-obit-wrapper .obit-items-wrapper .obit-item {
+  margin-bottom: 15px;
+}
+.home-obit-wrapper .obit-items-wrapper .obit-item .obit-image {
+  display: flex;
+  align-items: center;
+}
+.home-obit-wrapper .obit-items-wrapper .obit-item .obit-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.home-obit-wrapper .obit-items-wrapper .obit-item .obit-properties {
+  text-align: center;
+  color: #505050;
+}
+.home-obit-wrapper .obit-items-wrapper .obit-item .obit-properties .obit-name {
+  font-weight: bold;
+}
+.home-obit-wrapper .obit-items-wrapper .obit-item .obit-properties .obit-date {
+  font-size: 12px;
+}
+.home-obit-wrapper .subscribe-text {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+.home-obit-wrapper .subscribe-text a {
+  color: #c5a11f;
+}
+.home-obit-wrapper .subscribe-text.items-option3 {
+  padding: 1em 0 2em;
+}
+.home-obit-wrapper .obit-container {
+  display: none;
+}
+.home-obit-wrapper.homeobit-option2 {
+  display: block;
+}
+.home-obit-wrapper.homeobit-option2 #obit-slides {
+  display: none;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header {
+  flex-direction: row-reverse;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header .obit-btn {
+  display: none;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header .obit-title {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header .obit-title .divider,
+.home-obit-wrapper.homeobit-option2 .obit-header .obit-title a {
+  display: flex;
+  align-items: center;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header .obit-title a {
+  font-size: 16px;
+  color: #000;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header .obit-title a:hover {
+  color: #c5a11f;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header .obit-title .divider {
+  width: 3px;
+  height: 40px;
+  background-color: #d5d5d5;
+  margin: 0 20px;
+}
+.home-obit-wrapper.homeobit-option2 .obit-header form {
+  border-radius: 0;
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .home-obit-wrapper.homeobit-option2 .obit-header .obit-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .home-obit-wrapper.homeobit-option2 .obit-header .obit-title {
+    font-size: 26px;
+    flex-wrap: wrap;
+  }
+  .home-obit-wrapper.homeobit-option2 .obit-header .obit-title .divider {
+    margin: 0 5px;
+  }
+  .home-obit-wrapper.homeobit-option2 .obit-header .obit-title a {
+    font-size: 14px;
+  }
+  .home-obit-wrapper.homeobit-option2 .obit-header form {
+    width: 100%;
+  }
+}
+.home-obit-wrapper.homeobit-option2 .obit-item {
   flex: 0 0 16.6%;
   max-width: 16.6%;
   position: relative;
 }
-.obuturies-wrapper .obit-items-wrapper.items-option3 .obit-item .obit-properties {
+.home-obit-wrapper.homeobit-option2 .obit-item .obit-properties {
   color: #fff;
   position: absolute;
   bottom: 20px;
@@ -2085,7 +2288,7 @@ ul.footer-list {
   width: 100%;
   padding: 0 10px;
 }
-.obuturies-wrapper .obit-items-wrapper.items-option3 .obit-item .overlay {
+.home-obit-wrapper.homeobit-option2 .obit-item .overlay {
   background: white;
   background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, black 97%);
   background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, black 97%);
@@ -2097,44 +2300,45 @@ ul.footer-list {
   width: 100%;
   height: 50%;
 }
-.obuturies-wrapper .subscribe-text {
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-.obuturies-wrapper .subscribe-text a {
-  color: #c5a11f;
-}
-.obuturies-wrapper .subscribe-text.items-option3 {
-  padding: 1em 0 2em;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .obuturies-wrapper .obit-items-wrapper.items-option3 .obit-item,
-  .obuturies-wrapper .obit-items-wrapper.items-default .obit-item {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .home-obit-wrapper.homeobit-option2 .obit-item {
     flex: 0 0 33.3%;
     max-width: 33.3%;
   }
 }
 @media (max-width: 767px) {
-  .obuturies-wrapper .obit-items-wrapper {
-    padding: 0 15px;
-  }
-
-  .obuturies-wrapper .obit-items-wrapper.items-option3 .obit-item {
+  .home-obit-wrapper.homeobit-option2 .obit-item {
     flex: 0 0 100%;
     max-width: 100%;
   }
-
-  .obuturies-wrapper .obit-items-wrapper.items-default .obit-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .subscribe-text.items-option3 {
-    padding: 1.5em 15px 2em;
+}
+.home-obit-wrapper.homeobit-option2 .subscribe-text {
+  display: none;
+}
+.home-obit-wrapper.homeobit-option2 .obit-container {
+  display: block;
+  background-color: #09233f;
+}
+.home-obit-wrapper.homeobit-option2 .obit-container .subscribe-text {
+  display: block;
+  color: #fff;
+}
+.home-obit-wrapper.text-white .obit-header .obit-title,
+.home-obit-wrapper.text-white .obit-header form .form-control::placeholder,
+.home-obit-wrapper.text-white .obit-header form button i,
+.home-obit-wrapper.text-white .obit-header .obit-title a {
+  color: #fff;
+}
+.home-obit-wrapper.text-white .obit-items-wrapper .obit-item .obit-properties .obit-name,
+.home-obit-wrapper.text-white .obit-items-wrapper .obit-item .obit-properties .obit-date {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .home-obit-wrapper.nopadding .obit-header {
+    padding: 0 15px;
   }
 }
+
 #obituaries-page {
   background: #e9edf1;
   overflow: hidden;
@@ -2590,7 +2794,6 @@ section.home-banner.testimonials {
 .homepage-testimonials.testimonials-option3 {
   background: url(../assets/testi-bg.png) center center no-repeat;
   background-size: cover;
-  margin-bottom: 60px;
 }
 .homepage-testimonials.testimonials-option3 .test-heading h2 {
   color: #fff;
@@ -2627,6 +2830,9 @@ section.home-banner.testimonials {
   .testimonials-container .d-flex .btn-wrapper {
     margin: 20px 0 0;
   }
+}
+.testimonials-container .content-text {
+  margin-top: 25px;
 }
 
 .testimonials-widget-wrapper {

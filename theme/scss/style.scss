@@ -35,6 +35,18 @@ button {
 	padding: 60px 0;
 }
 
+.slick-prev:before,
+.slick-next:before {
+	display: none;
+}
+
+.text-white {
+	color: #fff !important;
+}
+.nopadding {
+	padding: 0 !important;
+}
+
 @import "./default";
 @import "./header-footer";
 @import "./obit-options";

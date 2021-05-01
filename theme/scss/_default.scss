@@ -298,9 +298,16 @@ h2.wel-sub-title {
 	font-size: 18px;
 }
 
-.welcome-mg img {
-	height: 485px;
-	object-fit: cover;
+.welcome-mg {
+	img {
+		height: 485px;
+		object-fit: cover;
+	}
+	@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+		img {
+			height: 380px;
+		}
+	}
 }
 
 .btn.btn-primary {
@@ -501,8 +508,15 @@ footer.footer {
 	width: 100%;
 }
 
-.footer-logo img {
-	width: 200px;
+.footer-logo {
+	img {
+		width: 200px;
+	}
+	@media (max-width: 767px) {
+		img {
+			width: 160px;
+		}
+	}
 }
 
 h4.footer-navigation-heading {
@@ -942,8 +956,22 @@ section.services-container {
 	margin-top: 40px;
 }
 
-.why-choose-us h3 img {
-	margin-right: 35px;
+.why-choose-us {
+	h3 {
+		img {
+			margin-right: 35px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		h3 {
+			font-size: 24px;
+			img {
+				margin-right: 10px;
+				max-height: 25px;
+			}
+		}
+	}
 }
 
 .s-service-content h2 {
@@ -970,6 +998,10 @@ section.services-container {
 .grid-img img {
 	width: 33.33%;
 	padding: 5px;
+
+	@media (max-width: 767px) {
+		width: 50%;
+	}
 }
 
 .s-service-content p {
@@ -1041,8 +1073,19 @@ section.services-container {
 	width: 100%;
 }
 
+.cre-img {
+	@media (max-width: 767px) {
+		img {
+			max-height: 40px;
+		}
+	}
+}
+
 .cre-content {
 	padding-left: 30px;
+	@media (max-width: 767px) {
+		padding-left: 15px;
+	}
 }
 
 .cre-content h4 {
@@ -1071,10 +1114,14 @@ section.services-container {
 }
 
 .cre-mom-box > img {
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	object-fit: cover;
-	border-radius: 169px;
+	border-radius: 100%;
+	@media (max-width: 767px) {
+		width: 120px;
+		height: 120px;
+	}
 }
 
 .cre-mom-box {
@@ -1106,10 +1153,17 @@ section.services-container {
 .trad-box > img {
 	width: 90px;
 	height: 90px;
+	@media (max-width: 767px) {
+		width: 48px;
+		height: 48px;
+	}
 }
 
 .trad-content {
 	padding-left: 30px;
+	@media (max-width: 767px) {
+		padding-left: 15px;
+	}
 }
 
 .trad-content p {
@@ -1389,7 +1443,7 @@ section.send-flower {
 	.cre-mem .pageheadings,
 	.why-plan-inner h3,
 	section.faq-wrapper h2 {
-		font-size: 42px;
+		font-size: 30px;
 	}
 
 	.pre-plan-card-header span.text-wrapper {
@@ -1412,7 +1466,7 @@ section.send-flower {
 	.cre-content h4,
 	.cre-mom h2,
 	.pre-wrapper h2 {
-		font-size: 32px;
+		font-size: 24px;
 	}
 
 	.cre-mom h2 {
@@ -1434,11 +1488,11 @@ section.send-flower {
 	.s-service-img {
 		width: 100%;
 	}
-
+	.pre-img {
+		text-align: center;
+	}
 	.pre-img > img {
-		width: 100%;
-		height: auto;
-		margin: 0;
+		margin: 0 auto 10px;
 	}
 
 	.pre-box {
@@ -1448,7 +1502,7 @@ section.send-flower {
 	}
 
 	.pre-content h4 {
-		font-size: 32px;
+		font-size: 28px;
 	}
 
 	.pre-content p {
@@ -1465,7 +1519,7 @@ section.send-flower {
 
 	.s-service-content {
 		width: 100%;
-		padding: 30px 20px;
+		padding: 30px 0px;
 	}
 
 	.s-service-content h2 {
@@ -1538,7 +1592,7 @@ section.send-flower {
 	}
 
 	.inner-banner-content h3 {
-		font-size: 60px;
+		font-size: 38px;
 	}
 
 	.service-list .s-service-box:nth-child(even) {
@@ -1610,7 +1664,9 @@ section.send-flower {
 	}
 
 	.main-link-box a h3 {
-		font-size: 38px;
+		font-size: 25px;
+		left: 20px;
+		bottom: 20px;
 	}
 
 	.test-box {
@@ -1630,6 +1686,7 @@ section.send-flower {
 		width: 100%;
 		padding-top: 30px;
 		padding-bottom: 30px;
+		padding-left: 15px;
 	}
 
 	.home-map-wrpper {
