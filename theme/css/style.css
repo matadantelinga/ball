@@ -2123,6 +2123,9 @@ ul.footer-list {
 .home-obit-wrapper .obit-header .obit-title a {
   display: none;
 }
+.home-obit-wrapper .obit-header .obit-title .text, .home-obit-wrapper .obit-header .obit-title a {
+  font-family: "Montserrat", sans-serif;
+}
 .home-obit-wrapper .obit-header form {
   border: solid 1px #d6d6d6;
   border-radius: 50px;
