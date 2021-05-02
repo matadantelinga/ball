@@ -2678,10 +2678,6 @@ ul.footer-list {
   color: #e79b25;
 }
 
-section.home-banner.testimonials {
-  background-image: linear-gradient(180deg, rgba(65, 0, 0, 0.2), rgba(65, 0, 0, 0.2)), url("../assets/obit-bg.jpg");
-}
-
 .homepage-testimonials {
   padding: 100px 0;
   width: 100%;
@@ -2943,6 +2939,11 @@ section.home-banner.testimonials {
   border: solid 1px #3281d1;
   box-shadow: none;
   outline: none;
+}
+
+.pageheadings {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .btn-round-line,
