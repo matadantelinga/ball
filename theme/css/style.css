@@ -2684,8 +2684,8 @@ section.home-banner.testimonials {
 
 .homepage-testimonials {
   padding: 100px 0;
-  float: left;
   width: 100%;
+  clear: both;
 }
 .homepage-testimonials .test-heading {
   width: 100%;
