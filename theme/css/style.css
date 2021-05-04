@@ -2123,7 +2123,8 @@ ul.footer-list {
 .home-obit-wrapper .obit-header .obit-title a {
   display: none;
 }
-.home-obit-wrapper .obit-header .obit-title .text, .home-obit-wrapper .obit-header .obit-title a {
+.home-obit-wrapper .obit-header .obit-title .text,
+.home-obit-wrapper .obit-header .obit-title a {
   font-family: "Montserrat", sans-serif;
 }
 .home-obit-wrapper .obit-header form {
@@ -2191,6 +2192,7 @@ ul.footer-list {
 .home-obit-wrapper .obit-items-wrapper .obit-item .obit-image img {
   width: 100%;
   object-fit: cover;
+  min-height: 150px;
 }
 .home-obit-wrapper .obit-items-wrapper .obit-item .obit-properties {
   text-align: center;
