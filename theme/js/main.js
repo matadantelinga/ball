@@ -71,18 +71,17 @@ jQuery(document).ready(function () {
 	});
 
 	// Homepage obit slider
-	$("#obit-slides").slick({
+	$(".layout2-1 #obit-slides").slick({
 		infinite: true,
 		slidesToShow: 6,
 		slidesToScroll: 6,
 		autoplay: false,
-		// centerPadding: true,
 		dots: false,
 		dotsClass: "slick-dots",
 		prevArrow:
-			"<button type='button' class='slick-prev pull-left'><img src='./theme/assets/prev-arrow-rounded.png'></button>",
+			"<button type='button' class='slick-prev pull-left'><img src='./theme/assets/chevron-prev.svg'></button>",
 		nextArrow:
-			"<button type='button' class='slick-next pull-right'><img src='./theme/assets/next-arrow-rounded.png'></button>",
+			"<button type='button' class='slick-next pull-right'><img src='./theme/assets/chevron-next.svg'></button>",
 		responsive: [
 			{
 				breakpoint: 1024,

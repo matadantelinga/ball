@@ -120,11 +120,6 @@ span.hideSidebar {
   transition: 250ms;
 }
 
-.logo-wrapper img {
-  width: 100%;
-  max-width: 320px;
-}
-
 .nav-item a.nav-link:hover {
   color: #dd9c29;
   transition: 250ms;
@@ -318,6 +313,10 @@ section.welcome-msg {
 
 section.main-links {
   padding: 20px 0;
+}
+section.main-links .row .col-md-4 {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 h1.wel-section-title {
@@ -1857,7 +1856,7 @@ section.send-flower {
   padding: 20px 0 10px;
 }
 .logo-wrapper img {
-  max-width: 290px;
+  height: 67px;
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .logo-wrapper {
@@ -2095,7 +2094,7 @@ ul.footer-list {
 .secondary-title {
   font-weight: bold;
   font-size: 40px;
-  font-family: "Montserrat", serif;
+  font-family: "DM Sans", serif;
 }
 @media (max-width: 767px) {
   .secondary-title {
@@ -2136,6 +2135,7 @@ ul.footer-list {
   flex: 1;
   margin: 0 10px;
   text-align: center;
+  font-family: "DM Sans", serif;
 }
 .home-obit-wrapper .obit-header .obit-title .divider,
 .home-obit-wrapper .obit-header .obit-title a {
@@ -2143,7 +2143,7 @@ ul.footer-list {
 }
 .home-obit-wrapper .obit-header .obit-title .text,
 .home-obit-wrapper .obit-header .obit-title a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "DM Sans", serif;
 }
 .home-obit-wrapper .obit-header form {
   border: solid 1px #d6d6d6;
@@ -2235,6 +2235,97 @@ ul.footer-list {
 }
 .home-obit-wrapper .obit-container {
   display: none;
+}
+.home-obit-wrapper.layout2-1 {
+  background-color: #011e36;
+  padding: 30px 2em;
+}
+.home-obit-wrapper.layout2-1 .obit-header {
+  flex-direction: row-reverse;
+}
+.home-obit-wrapper.layout2-1 .obit-header .obit-title {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.home-obit-wrapper.layout2-1 .obit-header .obit-title .text {
+  color: #fff;
+  font-size: 38px;
+  letter-spacing: 0;
+  line-height: 37px;
+}
+.home-obit-wrapper.layout2-1 .obit-header .obit-title .divider,
+.home-obit-wrapper.layout2-1 .obit-header .obit-title a {
+  display: flex;
+  align-items: center;
+}
+.home-obit-wrapper.layout2-1 .obit-header .obit-title a {
+  font-size: 16px;
+  color: #c5a11f;
+}
+.home-obit-wrapper.layout2-1 .obit-header .obit-title a:hover {
+  color: #fff;
+}
+.home-obit-wrapper.layout2-1 .obit-header .obit-title .divider {
+  width: 3px;
+  height: 30px;
+  background-color: #d5d5d5;
+  margin: 0 20px;
+}
+.home-obit-wrapper.layout2-1 .obit-header form .input-group button i {
+  color: #c5a11f;
+}
+.home-obit-wrapper.layout2-1 .obit-header .obit-btn {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .home-obit-wrapper.layout2-1 .obit-header .obit-title .text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .home-obit-wrapper.layout2-1 .obit-header .obit-title {
+    flex-wrap: wrap;
+  }
+  .home-obit-wrapper.layout2-1 .obit-header .obit-title .text {
+    font-size: 23px;
+  }
+  .home-obit-wrapper.layout2-1 .obit-header .obit-title .divider {
+    margin: 0 8px;
+  }
+  .home-obit-wrapper.layout2-1 .obit-header .obit-title a {
+    font-size: 14px;
+  }
+  .home-obit-wrapper.layout2-1 .obit-header form {
+    width: 100%;
+  }
+}
+.home-obit-wrapper.layout2-1 #obit-slides.obit-items-wrapper .obit-item .obit-image {
+  border-radius: 0;
+}
+.home-obit-wrapper.layout2-1 #obit-slides.obit-items-wrapper .obit-item .obit-properties .obit-name,
+.home-obit-wrapper.layout2-1 #obit-slides.obit-items-wrapper .obit-item .obit-properties .obit-date {
+  color: #fff;
+}
+.home-obit-wrapper.layout2-1 .subscribe-text {
+  display: none;
+}
+.home-obit-wrapper.layout2-1 .slick-arrow {
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+.home-obit-wrapper.layout2-1 .slick-arrow:hover {
+  background-color: #c5a11f;
+}
+.home-obit-wrapper.layout2-1 .slick-arrow img {
+  max-height: 20px;
 }
 .home-obit-wrapper.homeobit-option2 {
   display: block;
@@ -2974,13 +3065,12 @@ ul.footer-list {
 .btn-orange,
 .btn-line-orange {
   transition: all 0.3s ease-in;
-  padding: 0.75em 1em;
+  padding: 0.75em 1.5em;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   line-height: normal;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   text-transform: uppercase;
-  border-radius: 5px;
   transform: translateX(0px) translateY(0px);
   color: #505050;
 }

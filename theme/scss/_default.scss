@@ -76,11 +76,6 @@ span.hideSidebar {
 	transition: 250ms;
 }
 
-.logo-wrapper img {
-	width: 100%;
-	max-width: 320px;
-}
-
 .nav-item a.nav-link:hover {
 	color: #dd9c29;
 	transition: 250ms;
@@ -272,8 +267,16 @@ section.welcome-msg {
 	margin: 80px 0;
 }
 
-section.main-links {
-	padding: 20px 0;
+section {
+	&.main-links {
+		padding: 20px 0;
+		.row {
+			.col-md-4 {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+	}
 }
 
 h1.wel-section-title {

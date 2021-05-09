@@ -1,7 +1,7 @@
 .secondary-title {
 	font-weight: bold;
 	font-size: 40px;
-	font-family: "Montserrat", serif;
+	font-family: "DM Sans", serif;
 	@media (max-width: 767px) {
 		font-size: 30px;
 	}
@@ -47,14 +47,14 @@
 			flex: 1;
 			margin: 0 10px;
 			text-align: center;
-
+			font-family: "DM Sans", serif;
 			.divider,
 			a {
 				display: none;
 			}
 			.text,
 			a {
-				font-family: "Montserrat", sans-serif;
+				font-family: "DM Sans", serif;
 			}
 		}
 
@@ -151,6 +151,115 @@
 	.obit-container {
 		display: none;
 	}
+
+	&.layout2-1 {
+		background-color: #011e36;
+		padding: 30px 2em;
+		.obit-header {
+			flex-direction: row-reverse;
+			.obit-title {
+				text-align: left;
+				display: flex;
+				align-items: center;
+				.text {
+					color: #fff;
+					font-size: 38px;
+					letter-spacing: 0;
+					line-height: 37px;
+				}
+				.divider,
+				a {
+					display: flex;
+					align-items: center;
+				}
+				a {
+					font-size: 16px;
+					color: #c5a11f;
+					&:hover {
+						color: #fff;
+					}
+				}
+				.divider {
+					width: 3px;
+					height: 30px;
+					background-color: #d5d5d5;
+					margin: 0 20px;
+				}
+			}
+			form {
+				.input-group {
+					button {
+						i {
+							color: #c5a11f;
+						}
+					}
+				}
+			}
+			.obit-btn {
+				display: none;
+			}
+			@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+				.obit-title {
+					.text {
+						font-size: 30px;
+					}
+				}
+			}
+			@media (max-width: 767px) {
+				.obit-title {
+					flex-wrap: wrap;
+					.text {
+						font-size: 23px;
+					}
+					.divider {
+						margin: 0 8px;
+					}
+					a {
+						font-size: 14px;
+					}
+				}
+				form {
+					width: 100%;
+				}
+			}
+		}
+		#obit-slides {
+			&.obit-items-wrapper {
+				.obit-item {
+					.obit-image {
+						border-radius: 0;
+					}
+					.obit-properties {
+						.obit-name,
+						.obit-date {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		.subscribe-text {
+			display: none;
+		}
+		.slick-arrow {
+			background-color: #fff;
+			height: 50px;
+			width: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			transition: all 0.3s ease;
+			z-index: 20;
+			&:hover {
+				background-color: #c5a11f;
+			}
+			img {
+				max-height: 20px;
+			}
+		}
+	}
+
 	&.homeobit-option2 {
 		display: block;
 		#obit-slides {
