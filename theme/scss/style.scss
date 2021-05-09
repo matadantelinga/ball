@@ -9,7 +9,7 @@ $themeYellow: #e79b25;
 
 body {
 	font-size: 16px;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	font-family: "DM Sans", sans-serif;
 }
 
@@ -20,6 +20,10 @@ a {
 		text-decoration: none;
 		transition: all 0.3s ease-out;
 	}
+}
+p,
+a {
+	letter-spacing: 0;
 }
 
 button {

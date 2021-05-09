@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 body {
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -13,6 +13,11 @@ a {
 a:hover {
   text-decoration: none;
   transition: all 0.3s ease-out;
+}
+
+p,
+a {
+  letter-spacing: 0;
 }
 
 button.btn:focus {
@@ -330,6 +335,7 @@ h2.wel-sub-title {
   font-family: "DM Sans";
   font-weight: 600;
   margin-bottom: 40px;
+  letter-spacing: 0;
 }
 
 .wel-content p {
@@ -468,6 +474,7 @@ section.test-section {
 .home-map-wrpper {
   width: 50%;
   float: left;
+  height: 500px;
 }
 
 .home-map-wrpper iframe {
@@ -1779,6 +1786,7 @@ section.send-flower {
   height: 45px;
   transition: 250ms;
   padding: 0 10px;
+  letter-spacing: 0;
 }
 .top-header .top-header-inner .quick-links a:hover {
   background: #d6931e;
@@ -1825,6 +1833,7 @@ section.send-flower {
   align-items: center;
 }
 .top-header .top-header-inner .phone-number h6 span {
+  letter-spacing: 0;
   font-weight: 700;
 }
 .top-header .top-header-inner .phone-number h6 span:last-child {
@@ -1926,9 +1935,17 @@ nav .navbar-list li .nav-link {
   font-weight: 700;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
 }
 nav .navbar-list li .nav-link .showSidebar {
   font-size: 11px;
+  height: 20px;
+  display: flex;
+  width: 20px;
+  justify-content: center;
+  align-items: center;
 }
 nav .navbar-list li .nav-link:hover {
   color: #e79b25 !important;
@@ -1947,6 +1964,7 @@ nav .navbar-list li .dropdown-menu a {
   font-size: 14px;
   text-transform: uppercase;
   display: block;
+  letter-spacing: 0;
 }
 nav .navbar-list li .dropdown-menu a:hover {
   background: #e79b25;
